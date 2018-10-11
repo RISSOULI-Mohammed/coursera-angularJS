@@ -17,12 +17,12 @@
     <h1>Lunch Checker</h1>
 
     <div class="form-group">
-      <input id="lunch-menu" type="text" placeholder="list comma separated dishes you usually have for lunch" class="form-control" ng-model="items">
+      <input id="lunch-menu" type="text" placeholder="list comma separated dishes you usually have for lunch" class="form-control" ng-model="items" style="border: 2px solid {{ bcolor }};">
     </div>
     <div class="form-group">
       <button class="btn btn-default" ng-click="check()">Check If Too Much</button>
     </div>
-    <div class="form-group message">
+    <div class="form-group message" style="color:{{ color }};">
       {{ message }}
     </div>
   </div>
